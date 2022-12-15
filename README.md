@@ -1,5 +1,5 @@
 # JavaRenCalc1
 
-Рабочий вариант от Алексея: 
+Рабочий вариант: 
 
 ITSmartBrain/roman_calc_simplest
