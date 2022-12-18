@@ -1,4 +1,4 @@
-public class MethodOfAccess{
+public class ModificOfAccess {
 
     public static void main(String[] args) {
 
