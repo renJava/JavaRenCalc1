@@ -18,7 +18,8 @@ class Calc {
         String[] operands = expression.split("[+\\-*/]");
         if (operands.length != 2) throw new Exception("Должно быть два операнда");
         oper = detectOperation(expression);
-        if (oper == null) throw new Exception("Неподдерживаемая математическая операция");
+        // TODO: if (oper == null) throw new Exception("Неподдерживаемая математическая операция. Не катит");
+
         //если оба числа римские
         if (Roman.isRoman(operands[0]) && Roman.isRoman(operands[1])) {
             //конвертируем оба числа в арабские для вычесления действия
@@ -60,7 +61,7 @@ class Calc {
         else if (expression.contains("-")) return "-";
         else if (expression.contains("*")) return "*";
         else if (expression.contains("/")) return "/";
-        else return null;
+        return expression;                              // TODO: else return null;
     }
 
     static int calc(int a, int b, String oper) {
